@@ -116,8 +116,8 @@ void create_SLL(void){
 // Anagram is words that are formed with same leters by rearranging them
 void check_if_anagram(){
     char str1[8] = "integral", str2[8] = "triangle";
-    int count=0; char a[256] = {}, b[256]={};
-    // assume equal length
+    int count=0; int a[256] = {}, b[256]={};
+    // assume equal length, otherwise its not anagram. 
     for (int i = 0; i < sizeof(str1); i++){
         a[str1[i]] += 1;         
         b[str2[i]] += 1;
